@@ -1,0 +1,11 @@
+#Bài 6: Tính S(n) = 1/1×2 + 1/2×3 +…+ 1/n x (n + 1)
+def sum(n):
+    s = 0
+    for i in range(1, n):
+        s = s + 1/i * (i + 1)
+        print("i = " + str(i) + " => " + "1/i * (i + 1) =" + str(1/i * (i + 1)))
+        print("s = " + str(s))
+    return s
+
+
+print("sum of 1/1×2 + 1/2×3 +…+ 1/n x (n + 1) " + " is " + str(sum(6)))
